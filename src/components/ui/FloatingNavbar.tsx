@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { LucideIcon } from "lucide-react";
 
 export const FloatingNav = ({
   navItems,
@@ -16,7 +17,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
+    icon?: LucideIcon;
   }[];
   className?: string;
 }) => {
